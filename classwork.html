@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>   
+
+        <title>JS Hotel | You may code in, but never out!</title>          
+    </head>
+   
+    <body>
+    <div id="topOfPage">
+        <h1 id="main">Welcome to the JS Hotel</h1>
+        <p id="motto">You may code in, but never out!</p>
+        <p id="enjoy">Please enjoy your stay</p>
+    </div>
+ 
+        <form>
+            <!-- First Name -->
+            <label for="firstName">First Name:</label>
+            <input id="fName" type="text">
+            <br>
+            <!-- Last Name -->
+            <label for="lastName">Last Name:</label>
+            <input id="lName" type="text">
+            <br>
+            <!-- Length of stay (has to be a drop-down menu with numbers 1 - 30) -->
+            <label for="lengthOfStay">Length of Stay:</label>
+            <select id="lengthOfStay"></select>
+           
+            <br>
+            <!-- Room type (must also be a drop-down menu.  Single, Double, Queen) -->
+            <label for="roomType" name="roomType">Which room would you like?</label>
+            <div id="roomListDropDown"></div>
+            <br>
+        </form>
+        <button id="button1" onclick="myHotel.getInfoBookRoom()">Submit</button>  
+        
+        <div id="customerSummary"></div>
+       
+        <!-- myHotel Script -->
+        <script src="classwork.js"></script>
+    </body>
+</html>
